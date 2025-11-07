@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Carrito de Compras</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">ModaStyle</h1>
+            <div class="cart-toggle" id="cartToggle">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placeholder-image-service.onrender.com/image/300x400?prompt=Fashionable%20women%27s%20blouse%20with%20elegant%20design%20and%20button%20details&id=blouse-001" alt="Blusa femenina elegante de moda con diseño moderno y detalles en botones">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Blusa Elegante</h3>
+                        <p class="product-price">$29.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FF6B6B;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #4ECDC4;" data-color="Turquesa"></button>
+                            <button class="color-option" style="background-color: #45B7D1;" data-color="Azul"></button>
+                        </div>
+                        <p class="product-description">Blusa de alta calidad con diseño moderno y cómodo ajuste. Perfecta para ocasiones casuales y semi-formales.</p>
+                        <button class="add-to-cart" data-id="1" data-name="Blusa Elegante" data-price="29.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placeholder-image-service.onrender.com/image/300x400?prompt=Men%27s%20classic%20denim%20jeans%20with%20modern%20fit%20and%20style&id=jeans-002" alt="Jeans clásicos para hombre con corte moderno y ajuste contemporáneo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Jeans Clásicos</h3>
+                        <p class="product-price">$49.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Oscuro"></button>
+                            <button class="color-option" style="background-color: #95A5A6;" data-color="Gris"></button>
+                            <button class="color-option" style="background-color: #F39C12;" data-color="Mostaza"></button>
+                        </div>
+                        <p class="product-description">Jeans de denim de alta calidad con corte moderno y ajuste cómodo. Duraderos y con estilo contemporáneo.</p>
+                        <button class="add-to-cart" data-id="2" data-name="Jeans Clásicos" data-price="49.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placeholder-image-service.onrender.com/image/300x400?prompt=Elegant%20women%27s%20dress%20with%20flowing%20fabric%20and%20beautiful%20pattern&id=dress-003" alt="Vestido elegante para mujer con tejido fluido y patrón hermoso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vestido Floral</h3>
+                        <p class="product-price">$59.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #9B59B6;" data-color="Púrpura"></button>
+                            <button class="color-option" style="background-color: #E74C3C;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #1ABC9C;" data-color="Verde Agua"></button>
+                        </div>
+                        <p class="product-description">Vestido elegante con estampado floral y tejido suave que fluye con elegancia. Ideal para eventos especiales.</p>
+                        <button class="add-to-cart" data-id="3" data-name="Vestido Floral" data-price="59.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placeholder-image-service.onrender.com/image/300x400?prompt=Modern%20men%27s%20jacket%20with%20sleek%20design%20and%20premium%20look&id=jacket-004" alt="Chaqueta moderna para hombre con diseño elegante y aspecto premium">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Chaqueta Moderna</h3>
+                        <p class="product-price">$79.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #2C3E50;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #7F8C8D;" data-color="Gris Oscuro"></button>
+                            <button class="color-option" style="background-color: #16A085;" data-color="Verde Oscuro"></button>
+                        </div>
+                        <p class="product-description">Chaqueta de diseño contemporáneo con materiales de alta calidad y acabados premium. Abrigada y con estilo.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Chaqueta Moderna" data-price="79.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placeholder-image-service.onrender.com/image/300x400?prompt=Casual%20women%27s%20t-shirt%20with%20comfortable%20fit%20and%20simple%20design&id=tshirt-005" alt="Camiseta casual para mujer con ajuste cómodo y diseño simple">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Camiseta Básica</h3>
+                        <p class="product-price">$19.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FFFFFF; border: 1px solid #eee;" data-color="Blanco"></button>
+                            <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #E67E22;" data-color="Naranja"></button>
+                        </div>
+                        <p class="product-description">Camiseta de algodón 100% con ajuste cómodo y diseño versátil. Perfecta para uso diario y combinaciones casuales.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Camiseta Básica" data-price="19.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placeholder-image-service.onrender.com/image/300x400?prompt=Classic%20men%27s%20formal%20pants%20with%20elegant%20tailoring&id=pants-006" alt="Pantalones formales clásicos para hombre con corte elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pantalones Formales</h3>
+                        <p class="product-price">$64.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Marino"></button>
+                            <button class="color-option" style="background-color: #7D3C98;" data-color="Morado"></button>
+                            <button class="color-option" style="background-color: #1A5276;" data-color="Azul Oscuro"></button>
+                        </div>
+                        <p class="product-description">Pantalones de vestir con corte clásico y elegante confección. Ideales para ocasiones formales y de oficina.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Pantalones Formales" data-price="64.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+            <p class="empty-cart-message" id="emptyCartMessage">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
